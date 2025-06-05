@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="chatGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#f8fafc;stop-opacity:0.9" />
+    </linearGradient>
+    <radialGradient id="glowGradient" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Fondo principal con gradiente -->
+  <circle cx="256" cy="256" r="240" fill="url(#mainGradient)" stroke="rgba(255,255,255,0.1)" stroke-width="4"/>
+  
+  <!-- Efecto de brillo -->
+  <circle cx="256" cy="256" r="240" fill="url(#glowGradient)"/>
+  
+  <!-- Burbuja de chat principal -->
+  <path d="M120 180c0-30 24-54 54-54h164c30 0 54 24 54 54v100c0 30-24 54-54 54h-40l-40 50-40-50h-44c-30 0-54-24-54-54v-100z" 
+        fill="url(#chatGradient)" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+  
+  <!-- Puntos de conversación animados -->
+  <circle cx="200" cy="230" r="12" fill="#4f46e5" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.4;0.8" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="256" cy="230" r="12" fill="#7c3aed" opacity="0.8">
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+  </circle>
+  <circle cx="312" cy="230" r="12" fill="#ec4899" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.4;0.8" dur="2s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+  
+  <!-- Icono AI/Robot pequeño -->
+  <circle cx="350" cy="160" r="20" fill="#22c55e" opacity="0.9"/>
+  <circle cx="345" cy="155" r="3" fill="white"/>
+  <circle cx="355" cy="155" r="3" fill="white"/>
+  <path d="M345 165 Q350 170 355 165" stroke="white" stroke-width="2" fill="none"/>
+  
+  <!-- Texto moderno -->
+  <text x="256" y="420" font-family="system-ui, -apple-system, sans-serif" font-size="42" font-weight="600" 
+        text-anchor="middle" fill="#1f2937" opacity="0.9">Open WebUI</text>
+  
+  <!-- Líneas decorativas -->
+  <line x1="100" y1="450" x2="412" y2="450" stroke="url(#mainGradient)" stroke-width="3" opacity="0.6"/>
+</svg>

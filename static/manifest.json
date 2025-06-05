@@ -1,0 +1,96 @@
+{
+  "name": "Open WebUI - Interfaz Web Avanzada para IA",
+  "short_name": "Open WebUI",
+  "description": "Una interfaz web moderna y potente para interactuar con modelos de IA",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#171717",
+  "theme_color": "#3B82F6",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "es",
+  "categories": ["productivity", "utilities", "developer"],
+  "icons": [
+    {
+      "src": "/static/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/favicon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/static/screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Vista de escritorio de Open WebUI"
+    },
+    {
+      "src": "/static/screenshot-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Vista móvil de Open WebUI"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Nueva Conversación",
+      "short_name": "Chat",
+      "description": "Iniciar una nueva conversación con IA",
+      "url": "/chat",
+      "icons": [
+        {
+          "src": "/static/favicon-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Documentación",
+      "short_name": "Docs",
+      "description": "Ver documentación de la API",
+      "url": "/docs",
+      "icons": [
+        {
+          "src": "/static/favicon-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  }
+}
